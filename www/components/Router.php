@@ -31,13 +31,16 @@ class Router
             //Сравнение $uriPattern  $uri
             if (preg_match("~$uriPattern~", $uri)) {
 
+                //Получаем внутренний путь  из правила регулярного выражения
+                $internalRoute = preg_replace("~$uriPattern~", $path, $uri);
+
                 $segments = explode('/', $path);
                 // определяем контроллер и action который обрабатывает запрос
-                $controllerName = array_shift($segments) . 'Controller';
-                $controllerName = ucfirst($controllerName);
-
+                $controllerName = ucfirst(array_shift($segments)) . 'Controller';
 
                 $actionName = 'action' . ucfirst((array_shift($segments)));
+                $parameters = $segments;
+
                 // подключать файл класса контролерра
                 $controllerFile = ROOT . '/controllers/' . $controllerName . '.php';
                 if (file_exists($controllerFile)) {
@@ -45,7 +48,7 @@ class Router
                 }
                 //Создать обьект вызвать метод, (action)
                 $controllerObject = new $controllerName;
-                $result = $controllerObject->$actionName();
+                $result = call_user_func_array(array($controllerObject, $actionName), $parameters);
                 if ($result != null) {
                     break;
                 }
