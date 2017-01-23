@@ -88,10 +88,10 @@
                                     <li class="dropdown"><a href="#">Магазин<i class="fa fa-angle-down"></i></a>
                                         <ul role="menu" class="sub-menu">
                                             <li><a href="/catalog/">Каталог товаров</a></li>
-                                            <li><a href="/cart/">Корзина</a></li> 
+                                            <li><a href="/cart/">Корзина</a></li>
                                         </ul>
-                                    </li> 
-                                    <li><a href="/blog/">Блог</a></li> 
+                                    </li>
+                                    <li><a href="/blog/">Блог</a></li>
                                     <li><a href="/about/">О магазине</a></li>
                                     <li><a href="/contacts/">Контакты</a></li>
                                 </ul>
