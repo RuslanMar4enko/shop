@@ -9,7 +9,9 @@ return array(
     'category/([0-9]+)' => 'catalog/category/$1', // actionCategory в CatalogController
 
     'user/register' => 'user/register',
-
+    'user/logout' => 'user/logout',
+    'user/login' => 'user/login',
+    'cabinet' => 'cabinet/index',
     '' => 'app/index', // actionIndex в SiteController
 
 );

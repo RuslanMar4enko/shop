@@ -1184,6 +1184,15 @@ h2.title {
   display: block;
 }
 
+.my-cab{
+  width: 100%;
+  padding: 15px 0;
+  font-size: 20px;
+  color: #FFFFFF;
+  background: #FE980F;
+  text-align: center;
+}
+
 .view-product h3 {
   background: #FE980F;
   bottom: 0;

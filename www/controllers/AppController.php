@@ -9,7 +9,7 @@ class AppController
         $categories = Category::getCategoryList();
 
         $latestProducts = array();
-        $latestProducts = Product::getLatestProducts(6);
+        $latestProducts = Product::getLatestProducts(3);
 
 
         require_once(ROOT . '/views/app/index.php');
