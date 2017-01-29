@@ -60,12 +60,8 @@
                             </div>
                         <?php endforeach; ?>
 
-                        <!--                    <ul class="pagination">-->
-                        <!--                        <li class="active"><a href="">1</a></li>-->
-                        <!--                        <li><a href="">2</a></li>-->
-                        <!--                        <li><a href="">3</a></li>-->
-                        <!--                        <li><a href="">&raquo;</a></li>-->
-                        <!--                    </ul>-->
+                        <!-- Постраничная навигация -->
+                        <?php echo $pagination->get(); ?>
                     </div>
 
                 </div>
