@@ -11,6 +11,10 @@ return array(
     'user/logout' => 'user/logout',
     'user/login' => 'user/login',
 
+    'cart/add/([0-9]+)' => 'cart/add/$1', // actionAdd в CartController
+    'cart/addAjax/([0-9]+)' => 'cart/addAjax/$1', // actionAdd в CartController
+    'cart' => 'cart/index', // actionIndex в CartController
+
     'cabinet/edit' => 'cabinet/edit',
     'cabinet' => 'cabinet/index',
 

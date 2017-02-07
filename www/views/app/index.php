@@ -37,7 +37,7 @@
 
                                                 </p>
                                             </a>
-                                            <a href="#" class="btn btn-default add-to-cart"><i
+                                            <a href="/cart/add/<?php echo $product['id']; ?>" class="btn btn-default add-to-cart" data-id="<?php echo $product['id']; ?>" ><i
                                                         class="fa fa-shopping-cart"></i>В корзину</a>
                                         </div>
                                         <?php if ($product['is_new']): ?>
@@ -63,7 +63,7 @@
                                                     <img src="template/images/home/recommend1.jpg" alt=""/>
                                                     <h2>$56</h2>
                                                     <p>Easy Polo Black Edition</p>
-                                                    <a href="#" class="btn btn-default add-to-cart"><i
+                                                    <a href="/cart/add/<?php echo $product['id']; ?>" class="btn btn-default add-to-cart"><i
                                                                 class="fa fa-shopping-cart"></i>В
                                                         корзину</a>
                                                 </div>
@@ -78,7 +78,7 @@
                                                     <img src="/template/images/home/recommend2.jpg" alt=""/>
                                                     <h2>$56</h2>
                                                     <p>Easy Polo Black Edition</p>
-                                                    <a href="#" class="btn btn-default add-to-cart"><i
+                                                    <a href="/cart/add/<?php echo $product['id']; ?>" class="btn btn-default add-to-cart"><i
                                                                 class="fa fa-shopping-cart"></i>В
                                                         корзину</a>
                                                 </div>

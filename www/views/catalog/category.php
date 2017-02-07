@@ -36,9 +36,8 @@
                                             <p>
                                                 <?php echo $product['name']; ?>
                                             </p>
-                                            <a href="#" class="btn btn-default add-to-cart"><i
-                                                        class="fa fa-shopping-cart"></i>В
-                                                корзину</a>
+                                            <a href="/cart/add/<?php echo $product['id']; ?>" class="btn btn-default add-to-cart" data-id="<?php echo $product['id']; ?>" ><i
+                                                        class="fa fa-shopping-cart"></i>В корзину</a>
                                         </div>
                                         <div class="product-overlay">
                                             <div class="overlay-content">
@@ -48,7 +47,7 @@
                                                         <?php echo $product['name']; ?>
                                                     </p>
                                                 </a>
-                                                <a href="#" class="btn btn-default add-to-cart"><i
+                                                <a href="/cart/add/<?php echo $product['id']; ?>" class="btn btn-default add-to-cart" data-id="<?php echo $product['id']; ?>" ><i
                                                             class="fa fa-shopping-cart"></i>В корзину</a>
                                             </div>
                                         </div>
