@@ -18,7 +18,6 @@
                         <?php endforeach; ?>
                     </div>
                     <div class="shipping text-center">
-                        <img src="/template/images/home/shipping.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -30,7 +29,7 @@
                         <div class="product-image-wrapper">
                             <div class="single-products">
                                 <div class="productinfo text-center">
-                                    <img src="/template/images/home/product1.jpg" alt=""/>
+                                    <img src="<?php echo Product::getImage($product['id']); ?>" alt="" />
                                     <h2><?php echo $product['price']; ?>$</h2>
                                     <p>
                                         <?php echo $product['name']; ?>

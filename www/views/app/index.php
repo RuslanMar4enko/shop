@@ -30,7 +30,7 @@
                                     <div class="single-products">
                                         <div class="productinfo text-center">
                                             <a href="/product/<?php echo $product['id']; ?>">
-                                                <img src="/template/images/home/product1.jpg" alt=""/>
+                                                <img src="<?php echo Product::getImage($product['id']); ?>" alt="" />
                                                 <h2><?php echo $product['price']; ?>$</h2>
                                                 <p>
                                                     <?php echo $product['name']; ?>
@@ -68,8 +68,8 @@
                                     <div class="product-image-wrapper">
                                         <div class="single-products">
                                             <div class="productinfo text-center">
-                                                <img src="/template/images/home/product1.jpg" alt=""/>
-<!--                                                <img src="--><?php //echo Product::getImage($sliderItem['id']); ?><!--" alt=""/>-->
+
+                                                <img src="<?php echo Product::getImage($sliderItem['id']); ?>" alt=""/>
                                                 <h2>$<?php echo $sliderItem['price']; ?></h2>
                                                 <a href="/product/<?php echo $sliderItem['id']; ?>">
                                                     <?php echo $product['name']; ?>
