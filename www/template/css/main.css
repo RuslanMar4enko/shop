@@ -581,7 +581,7 @@ ul.sub-menu {
 }
 
 .item {
-  padding-left: 100px;
+  padding: 0 40px;
 }
 
 
@@ -1047,6 +1047,7 @@ h2.title {
 
 .recommended_items {
   overflow: hidden;
+  position: relative;
 }
 
 #recommended-item-carousel .carousel-inner .item {

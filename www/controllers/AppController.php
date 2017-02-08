@@ -11,6 +11,8 @@ class AppController
         $latestProducts = array();
         $latestProducts = Product::getLatestProducts(3);
 
+        $sliderProducts = Product::getRecommendedProducts();
+
 
         require_once(ROOT . '/views/app/index.php');
 
